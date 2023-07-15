@@ -1,25 +1,14 @@
 import express from "express";
-import { ApolloServer, gql } from "apollo-server-express";
+import { ApolloServer } from "apollo-server-express";
 import dotenv from "dotenv";
+
+import typeDefs from "./type-definitions/index";
+import resolvers from "./resolvers";
 
 dotenv.config();
 const app = express();
 
 app.use(express.json());
-
-const typeDefs = gql`
-  type Query {
-    _: String
-  }
-
-  type Mutation {
-    _: String
-  }
-`;
-
-const resolvers = {
-  Query: {},
-};
 
 let apolloServer: any = null;
 const PORT = process.env.PORT || 3000;
