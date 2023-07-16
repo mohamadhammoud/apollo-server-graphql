@@ -1,6 +1,7 @@
 import { gql } from "apollo-server-express";
 
 import userDefinitions from "./user";
+import taskDefinitions from "./task";
 
 const typeDefs = gql`
   type Query {
@@ -12,4 +13,4 @@ const typeDefs = gql`
   }
 `;
 
-export default [typeDefs, userDefinitions];
+export default [typeDefs, userDefinitions, taskDefinitions];
