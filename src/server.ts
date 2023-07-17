@@ -2,6 +2,7 @@ import express from "express";
 import { ApolloServer } from "apollo-server-express";
 import dotenv from "dotenv";
 
+import context from "./context";
 import typeDefs from "./type-definitions/index";
 import resolvers from "./resolvers";
 
@@ -14,7 +15,7 @@ let apolloServer: any = null;
 const PORT = process.env.PORT || 3000;
 
 async function startServer() {
-  apolloServer = new ApolloServer({ typeDefs, resolvers });
+  apolloServer = new ApolloServer({ typeDefs, resolvers, context });
 
   await apolloServer.start();
   apolloServer.applyMiddleware({ app, path: "/graphql" });
