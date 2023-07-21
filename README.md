@@ -1,9 +1,8 @@
-[![Solidity 0.8.19](https://img.shields.io/badge/Solidity-0.8.19-blue)](https://soliditylang.org/)
-[![Yul](https://img.shields.io/badge/-Yul-9cf)](https://solidity.readthedocs.io/en/latest/yul.html)
-[![Assembly](https://img.shields.io/badge/-Assembly-orange)](https://en.wikipedia.org/wiki/Assembly_language)
-[![Foundry](https://img.shields.io/badge/Foundry-yellow)](https://example.com/foundry)
 [![Twitter: @HammoudMohamadk](https://img.shields.io/twitter/follow/HammoudMohamadk.svg?style=social)](https://twitter.com/HammoudMohamadk)
 [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
+[![Node.js](https://img.shields.io/badge/Node.js-v14-blue)](https://nodejs.org/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-v4.4.2-blue)](https://www.typescriptlang.org/)
+![GraphQL](https://img.shields.io/badge/GraphQL-+-orange)
 
 # Apollo Server Template with Express and Node.js
 
